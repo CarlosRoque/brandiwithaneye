@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Pacifico);
+
+main {
+  width: 100%;
+  width: 100%;
+  margin:auto;
+  padding: 0px;
+}
+header {
+  text-align: center;
+}
+.clear{clear: both;}
+section {position: relative;}
+div,section,p {box-sizing: border-box;}
+
+body {background-color: #EEE; margin: 0px; padding:0px;}
+main {background-color: #FFF;}
+header {
+  background:url('?holder.js/1200x600?theme=industrial');
+  height: 600px;
+  width: 100%;
+}
+.margin-top-10 {margin-top: 10px;}
+.margin-top-neg-40{ margin-top: -40px; }
+
+@media (min-width: 1025px) {
+	.padded-10 { margin: 0 50px;}
+}
+
+@media (max-width: 1024px) {
+  .padded-10 { margin:0;}
+  .box {margin-bottom: 10px;}
+}
+
+/***************/
+/* typography  */
+/***************/
+h1,h2,h3, h4{
+  font-family: 'pacifico';
+  color: #6f6f6f;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+h1{ font-size: 30pt; font-weight: normal; }
+h2{ font-size: 26pt; font-weight: normal; }
+h3{ font-size: 24pt; font-weight: normal; }
+h4{
+  font-size: 20pt;
+  font-weight: 600;
+  font-family: 'arial'
+}
+
+/***************/
+/*  Navigation */
+/***************/
+#name {
+  font-family: 'pacifico';
+  color: #FFF;
+  float: left;
+  padding: 0 40px;
+  font-size: 23pt;
+}
+nav{
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+nav #links {float:right;}
+nav span{display:inline-block; text-align: center; padding: 10px; }
+nav a {
+  font-family: 'Open Sans Condensed';
+  font-size: 22pt;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+nav a:hover {
+  background-color: #72a8ee;
+  border-radius: 5px;
+}
+
+
+
+
+/***************/
+/*  Sections   */
+/***************/
+
+.section-content {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.section-content p {
+  font-family: 'open sans condensed';
+  font-size: 18pt;
+  padding:40px;
+  margin: 0px;
+}
+
+#section2 {
+  height: 600px;
+  width: 100%;
+  padding: 175px 100px;
+}
+
+
+/***************/
+/*    Boxes    */
+/***************/
+.box-container {
+    text-align: center;
+    width: 100%;
+}
+.box {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  padding: 40px;
+}
+.red {background-color: #ee0d61; }
+.green {background-color: #0bcd13; }
+.blue {background-color: #5a89b2; }
+.box h3{
+  color: #FFF;
+}
+.price {
+  height: 500px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  position: relative;
+}
+.price h3, .price li {
+  color: #333;
+  font-weight: normal;
+}
+.price ul, .price li {
+  margin:0px;
+  padding: 0px;
+  text-align: left;
+  list-style-type:none;
+}
+.price li{
+  font-family: 'open sans condensed';
+  font-size: 18pt;
+  padding: 10px 0;
+  border-bottom: 1px dashed #DDD;
+}
+.price-ammount{
+  position:absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+}
+.price-ammount span{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5a89b2;
+  border-radius: 5px;
+  color: #fff;
+  font-family: arial;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.box p {
+  color: #fff;
+  font-family: 'Open Sans Condensed';
+  font-size: 18pt;
+  margin-top: 10px;
+}
+
+/***************/
+/*  leterbox   */
+/***************/
+
+.letterbox{
+  position: static;
+  height: 250px;
+  max-width: 600px;
+  background-color: #FFF;
+  padding: 25px;
+  text-align: left;
+}
+.letterbox h3 {
+  text-align: left;
+}
+.letterbox p {
+  margin:  5px 0 0 0;
+  font-family: 'open sans condensed';
+  color: #555;
+  font-size: 16pt;
+}
