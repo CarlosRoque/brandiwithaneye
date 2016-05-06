@@ -1,6 +1,11 @@
+$(document).ready(function(){
+  $('#menu-home').addClass('nav-slected-a');
+});
+
 // Attach an scroll trigger to the document
 $(document).scroll(function(){
   var applicable_color = '';
+  var section_id = '';
   // on scroll check all sections positions
   $('.section').each(function(){
     // Count how many pixes are hidden from view above the scrollable area
@@ -18,11 +23,14 @@ $(document).scroll(function(){
       // this ensure we don't transition to many color for each
       // trigger of this rule since many sections can hace a off.top > top
       applicable_color = color;
+      section_id = $(this).attr('id');
     }
   });
 
   // after parsing all section apply the last applicable section color
   // if none then remove the background
+  $('nav a').removeClass('nav-slected-a');
+  $('#menu-'+section_id).addClass('nav-slected-a');
   if(applicable_color == "none" || applicable_color == ''){
     $('nav').css('background', applicable_color);
   }else{

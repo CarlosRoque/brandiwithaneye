@@ -79,11 +79,10 @@ nav a {
   padding: 0 10px;
   transition: background 0.25s ease;
 }
-nav a:hover {
+nav a:hover,.nav-slected-a {
   background-color: #72a8ee;
   border-radius: 5px;
 }
-
 
 
 
